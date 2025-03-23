@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggler()">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to Your eCommerce Store</h2>
+            <p>
+                At Your eCommerce Store, we are passionate about providing high-quality products and exceptional
+                customer service.
+                Our mission is to make online shopping easy, enjoyable, and accessible for everyone.
+            </p>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to deliver the best shopping experience by offering a wide range of products, fast
+                shipping,
+                and excellent customer support. We believe in building long-lasting relationships with our customers.
+            </p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/user-1.png" alt="Team Member 1">
+                    <h3>Doaa Sayed</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/user-2.png" alt="Team Member 2">
+                    <h3>Ahmed Hassan</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/user-3.png" alt="Team Member 3">
+                    <h3>Sara Saad</h3>
+                    <p>Product Manager</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and Ios mobile</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Download App For Android and Ios mobile Phone.Download App For Android and Ios.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 9/11/2024 RedStore. All rights reserved</p>
+
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggler() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

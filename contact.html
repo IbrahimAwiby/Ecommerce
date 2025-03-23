@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggler()">
+        </div>
+    </div>
+
+        <!-- Main Content -->
+        <main>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <section class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message here"
+                                required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+    
+                <!-- Embedded Map -->
+                <section class="map">
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389525099!2d31.34085883250011!3d30.05961847028782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1697222222222!5m2!1sen!2sus"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </section>
+            </div>
+    
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><strong>Email:</strong> support@example.com</li>
+                    <li><strong>Phone:</strong> +20 123 456 7890</li>
+                    <li><strong>Address:</strong> Cairo, Egypt</li>
+                </ul>
+            </section>
+        </main>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and Ios mobile</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Download App For Android and Ios mobile Phone.Download App For Android and Ios.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 9/11/2024 RedStore. All rights reserved</p>
+
+        </div>
+    </div>
+
+
+    <!-- navbar -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggler() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
